@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+@import url('https://fonts.googleapis.com/css?family=PT+Sans');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: "PT sans", sans-serif;
+    font-size: 24px;
+    color: #234465;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    min-height: 100vh;
+    flex-wrap: wrap;
+     background: linear-gradient(125deg, white,#E7E6E4,white,#E7E6E4);
+    background-size: 400%;
+    animation: bganimation 15s infinite;
+}
+
+
+@keyframes bganimation {
+    0%{
+        background-position: 0% 50%;
+    }
+     50%{
+        background-position: 100% 50%;
+    }
+     100%{
+        background-position: 0% 50%;
+    }
+}
+
+#navigation {
+    background: linear-gradient(125deg, darkblue,#E7E6E4,darkred,#E7E6E4);
+    background-size: 400%;
+    animation: animation 15s infinite;
+    padding: 0.5rem;
+    width: 100%;
+    
+}
+
+@keyframes animation {
+    0%{
+        background-position: 0% 50%;
+    }
+     50%{
+        background-position: 100% 50%;
+    }
+     100%{
+        background-position: 0% 50%;
+    }
+}
+
+#navigation-text {
+    position: relative;
+    padding: 0.8rem;
+    justify-content: center;
+}
+
+#lecture-name {
+    position: relative;
+    font-family: "Lato", sans-serif;
+    color: white;
+    font-weight: bold;
+    justify-content: center;
+    text-align: center;
+    font-style: italic;
+}
+
+#exercise {
+    width: 70%;
+    float: left;
+    padding: 1rem 0 1rem 1rem;
+}
+
+main:after {
+    display: block;
+    content: '';
+    clear: both;
+}
+
+input[type="button"],
+button {
+    padding: 0.3rem 0.5rem;
+    font-size: 0.7em;
+    margin: 1rem 0 1rem 0;
+    border: none;
+    color: white;
+    background: #234465;
+    border-radius: 5px;
+    outline: none;
+}
+
+
+#chatChronology {
+    display: inline-block;
+    width: 35%;
+    border: 1px solid white;
+    margin-left: 1%;
+    margin-right: 1%;
+}
+
+
+input,
+button {
+    vertical-align: top;
+}
+
+input {
+    width: 20%;
+    font-size: 20px;
+}
+
+#exercise {
+    margin: 0 auto;
+    text-align: center;
+	
+}
+
+
+#exercise p {
+    border-bottom: 1px solid white;
+    word-wrap: break-word;
+}
+
+
+#exercise span {
+    font-size: 24px;
+    color: #234465;
+    font-weight: bold;
+}
+
+#exercise div {
+    border-bottom: 1px solid #234465;
+    width: 100vw;
+    font-style: italic;
+}
+
+.cards {
+    width: 60%;
+    float: left;
+    padding: 3rem;
+}
+
+#result {
+    text-align: center;
+}
+
+#result:nth-child(2), #history {
+    font-size: 44px;
+    padding: 11px;
+    font-weight: bold;
+}
+
+#container > footer:nth-child(3) {
+    background: linear-gradient(125deg, darkblue,#E7E6E4,darkred,#E7E6E4);
+}
